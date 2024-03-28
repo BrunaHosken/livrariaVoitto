@@ -55,7 +55,7 @@ export const Formulario=({setRefresh})=>{
 
         if(await isValid()){
             setRefresh(false);
-            const novoLivro = newLivro;
+            const novoLivro = newLivro();
             await postLivros(novoLivro)
             .then((result)=> {
                 setRefresh(true);
