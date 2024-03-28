@@ -1,0 +1,25 @@
+.top-bar{
+    background-color: #282828;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px 0.8fr;
+    box-shadow: 0 4px 4px rgb(0,0,0,0.25);
+}
+
+.logo{
+    display: grid;
+    align-items: center;
+    padding: 20px 0 20px 70px;
+}
+
+.logo img{
+    height: 100%;
+    width: 70px;
+}
+
+.titulo{
+    display: grid;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}

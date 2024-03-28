@@ -1,0 +1,18 @@
+html body{
+    margin: 0 !important;
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: #282828;
+}
+
+.div-formulario{
+    display: grid;
+    justify-content: center;
+}
+
+.div-card{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,0fr);
+    justify-items: center;
+    column-gap: 96px;
+}
