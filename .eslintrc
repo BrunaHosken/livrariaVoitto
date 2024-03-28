@@ -1,0 +1,16 @@
+{
+    "rules": {
+      "react-hooks/exhaustive-deps": ["warn", {
+        "enableDangerousAutofixThisMayCauseInfiniteLoops": true
+      }]
+    },
+    "overrides": [
+      {
+        "files": ["src/**/*.js"],
+        "rules": {
+          "react-hooks/exhaustive-deps": "off"
+        }
+      }
+    ]
+  }
+  
