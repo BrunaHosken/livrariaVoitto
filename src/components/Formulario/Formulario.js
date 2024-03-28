@@ -7,7 +7,7 @@ import { convertBase64 } from "../../utils/file";
 
 
 export const Formulario=({setRefresh})=>{
-    const valorPadraoImagem = {src:'', base64: ''}
+    const valorPadraoImagem = {src:'', base64: ''};    
     const  [imagem,  setImagem] = useState(valorPadraoImagem);
     const  [imagemRequired,  setImagemRequired] = useState();
     const  [titulo,  setTitulo] = useState('');
@@ -151,8 +151,8 @@ export const Formulario=({setRefresh})=>{
                     {tituloRequired && <label className="campo-obrigatorio">{tituloRequired}</label>}
                 </div>
                 <div>
-                    <label>Tipo do livro</label>
-                    <select  onChange={(event)=> setTipoLivro(event.target.value)} value={primeiroValor}>
+                    <label>Tipo do livro</label>   
+                    <select  onChange={(event)=> setTipoLivro(event.target.value)} value={tipoLivro}>
                         {tiposLivros && tiposLivros.map((value, index)=>{
                             return <option key={index} value={value.nome}>{value.nome}</option>
                         })}
